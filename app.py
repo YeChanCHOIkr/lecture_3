@@ -1,4 +1,5 @@
 import func_module
+import func_module_as
 
 #func_module.module_show()
 
@@ -15,3 +16,8 @@ print('오늘은 {}년 {}월 {}일입니다.'.format(nowdate.year,nowdate.month,
 x_mas = nowdate.replace(month = 12, day = 25)
 date_x_mas = '오늘은 {}년 {}월 {}일입니다.'.format(x_mas.year,x_mas.month,x_mas.day)
 print(date_x_mas)
+
+ndate = func_module_as.date_now()
+print(ndate)
+
+func_module_as.remain_date()
